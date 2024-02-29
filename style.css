@@ -1,0 +1,72 @@
+:root {
+    --soft-orange: hsl(35, 77%, 62%);
+    --soft-red: hsl(5, 85%, 63%);
+
+    --off-white: hsl(36, 100%, 99%);
+    --grayish-blue: hsl(233, 8%, 79%);
+    --dark-grayish-blue: hsl(236, 13%, 42%);
+    --very-dark-blue: hsl(240, 100%, 5%);
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    font-size: 15px;
+}
+
+body { 
+    width: 100vw; 
+    height: 100vh;
+
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+main {
+
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 90%;
+
+}
+
+.logo {
+    width: 65px; 
+    height: 40px;
+}
+
+.links {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.title {
+    grid-row-start: 2; 
+    grid-row-end: 3; 
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.mainImage {
+
+    width: 600px;
+    height: 300px;
+
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
