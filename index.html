@@ -9,67 +9,155 @@
   <title>Frontend Mentor | News homepage</title>
 </head>
 <body>
-  <header>
-    <img class="logo" src="assets/images/logo.svg" alt="logo">
-    <div class="links">
-      <a>
-        Home
-      </a>
-      <a>
-        New
-      </a>
-      <a>
-        Popular
-      </a>
-      <a>
-        Trending
-      </a>
-      <a>
-        Categories
-      </a>
-    </div>
-  </header>
-  <main>
-    <img class="mainImage" src="assets/images/image-web-3-desktop.jpg" alt="desktop">
-    <h1 class=".title">
-      The Bright Future of Web 3.0?
-    </h1>
-    <p>
-      We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
-      But is it really fulfilling its promise?
-    </p>
+  <div class="container">
+    <header>
+      <img class="logo" src="assets/images/logo.svg" alt="logo">
+      <button id="menu" class="menu buttonOpenClose">
+        <img src="assets/images/icon-menu.svg" alt="menu">
+      </button>
+        <div class="links">
+        <a>
+          Home
+        </a>
+        <a>
+          New
+        </a>
+        <a>
+          Popular
+        </a>
+        <a>
+          Trending
+        </a>
+        <a>
+          Categories
+        </a>
+      </div>
+    </header>
+    <main>
+      <div class="imageHolder">
+        <img class="mainImage" src="assets/images/image-web-3-desktop.jpg" alt="desktop">
+      </div>
+      <h1 class="title">
+        The Bright Future of Web 3.0?
+      </h1>
+      <div class="readMore">
+        <p class="readMoreP">
+          We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?
+        </p>
 
-    <button>
-      Read more
-    </button>
-    <div>
-      New 
+        <button class="readMoreButton">
+          Read more
+        </button>
+      </div>  
+      <div class="new">
+        <h1 class="newTitle">
+          New
+        </h1> 
 
-      Hydrogen VS Electric Cars
-      Will hydrogen-fueled cars ever catch up to EVs?
+        <h2 class="newSubTitle">
+          Hydrogen VS Electric Cars
+        </h2>
+        <p class="newP">
+          Will hydrogen-fueled cars ever catch up to EVs?
+        </p>
 
-      The Downsides of AI Artistry
-      What are the possible adverse effects of on-demand AI image generation?
+        <hr>
 
-      Is VC Funding Drying Up?
-      Private funding by VC firms is down 50% YOY. We take a look at what that means.
-    </div>
-    <div>
-      01
-      Reviving Retro PCs
-      What happens when old PCs are given modern upgrades?
-    </div>
-    <div>
-      02
-      Top 10 Laptops of 2022
-      Our best picks for various needs and budgets.
-    </div>
+        <h2 class="newSubTitle">
+          The Downsides of AI Artistry
+        </h2>
+        <p class="newP">
+          What are the possible adverse effects of on-demand AI image generation?
+        </p>
 
-    <div>
-      03
-      The Growth of Gaming
-      How the pandemic has sparked fresh opportunities.
+        <hr>
+        <h2 class="newSubTitle">
+          Is VC Funding Drying Up?
+        </h2>
+        <p class="newP">
+          Private funding by VC firms is down 50% YOY. We take a look at what that means.
+        </p>
+        </div>
+      <div class="related1">
+        <div class="relatedContainer">
+          <img class="relatedImage" src="assets/images/image-retro-pcs.jpg" alt="retroPcs">
+          <div class="related">
+            <h1 class="relatedNumber">
+              01
+            </h1>
+            <h2 class="relatedTitle">
+              Reviving Retro PCs
+            </h2>
+            <p class="relatedP">
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="related2">
+        <div class="relatedContainer">
+          <img class="relatedImage" src="assets/images/image-top-laptops.jpg" alt="laptops">
+          <div class="related">
+            <h1 class="relatedNumber">
+              02
+            </h1>
+            <h2 class="relatedTitle">
+              Top 10 Laptops of 2022
+            </h2>
+            <p class="relatedP">
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="related3">
+        <div class="relatedContainer">
+          <img class="relatedImage" src="assets/images/image-gaming-growth.jpg" alt="gamingGrowth">
+          <div class="related">
+            <h1 class="relatedNumber">
+              03
+            </h1>
+            <h2 class="relatedTitle">
+              The Growth of Gaming
+            </h2>
+            <p class="relatedP">
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div id="mobileMenu" class="mobileMenu mobileMenuHidden">
+    <div class="transparent"></div>
+    <div class="mobileNavButtonContainer">
+      <div class="mobileNavContainer">
+        <nav class="mobileNav">
+          <a>
+            Home
+          </a>
+          <a>
+            New
+          </a>
+          <a>
+            Popular
+          </a>
+          <a>
+            Trending
+          </a>
+          <a>
+            Categories. 
+          </a>
+        </nav>
+      </div>
+      <div class="closeMenuContainer">
+        <button class="closeButton buttonOpenClose">
+          <img class="menuClose" src="assets/images/icon-menu-close.svg" alt="close">
+        </button>
+      </div> 
     </div>
-  </main>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
