@@ -7,10 +7,14 @@ function menuOpenClose() {
     if (mobileMenu.classList.contains("mobileMenuHidden")) {
         mobileMenu.classList.add("mobileMenuShow");
         mobileMenu.classList.remove("mobileMenuHidden");
+
+        mobileMenu.classList.add("animateOpen");
     }
     else {
         mobileMenu.classList.add("mobileMenuHidden");
         mobileMenu.classList.remove("mobileMenuShow");
+        
+        mobileMenu.classList.remove("animateOpen");
     }
 }
 

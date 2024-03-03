@@ -78,8 +78,17 @@ hr {
 
     width: 100%;
     max-height: 275px;
+}
 
-    flex-basis: 80px;
+@keyframes slideInLeft {
+
+    from {
+        padding-left: 500px;
+    }
+
+    to {
+        padding-left: 0px;
+    }
 }
 
 .imageHolder {
@@ -221,6 +230,16 @@ hr {
 
 .mobileMenuHidden {
     display: none;
+}
+
+.animateOpen {
+
+    animation: slideInLeft 1.5s;
+}
+
+.animateClose {
+    animation: slideInLeft 1.5s;
+    animation-direction: reverse;
 }
 
 .mobileMenuShow {
